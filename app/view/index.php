@@ -1,6 +1,4 @@
 <?php 
-
-
 require_once "../controller/controller.php";
 use Controller\controllerFuncionario as Funcionario; // intanciando namespace e acrecentando um apelido
 
@@ -30,19 +28,4 @@ use Controller\controllerFuncionario as Funcionario; // intanciando namespace e 
             $pessoa->setEmail($email);
             // enviando os dados para ser inseridos
             $pessoa->insert($nome,$telefone,$celular,$email);
-    
-        
-    
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>TesT</h1>
-</body>
-</html>
