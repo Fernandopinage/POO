@@ -14,11 +14,12 @@
 
         public function insert($nome,$telefone,$celular,$email){ //inserindo dados na classe
 
-
-            echo $this->getNome()."<br>";
-            echo $this->getTelefone()."<br>";
-            echo $this->getCelular()."<br>";
-            echo $this->getEmail()."<br>";
+            echo"// exibindo dados via get e set enviado pelo POST <br><br><br>";
+            echo $this->getNome($nome)."<br>";
+            echo $this->getTelefone($telefone)."<br>";
+            echo $this->getCelular($celular)."<br>";
+            echo $this->getEmail($email)."<br>";
+            echo "////////////////////////////////////////////////////////////////////////////////////// <br><br><br>";
         }
 
 
