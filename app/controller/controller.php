@@ -11,7 +11,6 @@
         private $email;
 
 
-
         public function insert($nome,$telefone,$celular,$email){ //inserindo dados na classe
 
             echo"// exibindo dados via get e set enviado pelo POST <br><br><br>";

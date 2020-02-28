@@ -1,4 +1,5 @@
 <?php 
+namespace App\index;
 require_once "../controller/controller.php";
 use Controller\controllerFuncionario as Funcionario; // intanciando namespace e acrecentando um apelido
 
