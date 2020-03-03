@@ -1,7 +1,7 @@
 <?php 
+    
 
-
-    namespace Controller; //criando  namespace
+  namespace App\Controller; // name da class
 
     class controllerFuncionario{ //criando uma classe
 
