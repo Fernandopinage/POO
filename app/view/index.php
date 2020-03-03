@@ -1,5 +1,6 @@
 <?php 
 
+namespace App\view;
 require_once "../vendor/autoload.php";
 use App\Controller\controllerFuncionario as Funcionario;
 
