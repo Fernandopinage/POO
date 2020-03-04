@@ -1,0 +1,17 @@
+{
+    "autoload": {
+        "psr-4": {"App\\": "App/"}
+    },
+
+    "name": "root/app",
+    "description": "aprendendo gerencimento de dependencia",
+    "authors": [
+        {
+            "name": "Fernando Pinage",
+            "email": "luizfernandoluck@hotmail.com"
+        }
+    ],
+    "require": {}
+
+    
+}

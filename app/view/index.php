@@ -1,38 +1,45 @@
 <?php 
-
 namespace App\view;
-require_once "../vendor/autoload.php";
-use App\Controller\controllerFuncionario as Funcionario;
+require_once "vendor/autoload.php";
+use App\controller\funcionario as Funcionario;
+
+    class index{
+
+        public $nome;
+        public $matricula;
+        public $telefone;
+
+        public function __construct()
+        {
+            
+            echo "aqui";
+        }
+
+        public function funcionario ($nome,$matricula,$telefone){
 
 
-            // setando o dados manualmente
-            $pessoa = new Funcionario();
-            $pessoa->setNome('Luiz');
-            $pessoa->setTelefone('123456789');
-            $pessoa->setCelular('987654321');
-            $pessoa->setEmail('Luizfernandoluck@hotmail.com');
+            echo "inserindo os dados de ".$nome."Nome da matricular ".$matricula."seu telefone e ".$telefone;
+        }
 
-            echo"// exibindo dados via get e set os atributos foram criado ja no set <br><br><br>";
-            echo $pessoa->getNome()."<br>";
-            echo $pessoa->getTelefone()."<br>";
-            echo $pessoa->getCelular()."<br>";
-            echo $pessoa->getEmail()."<br><br><br>";
-            echo "////////////////////////////////////////////////////////////////////////////////////// <br><br><br>";
-           
-           
-           
-            // exemplo de como poderia setar os dados via formulario 
+        public function getNome(){
+            return $this->nome;
+        }
+        public function getMatricula(){
+            return $this->matricula;
+        }
+        public function getTelefone(){
+            return $this->Telefone;
+        }
+        public function setNome($nome){
+            $this->nome = $nome;
+        }
+        public function setMatricula($matricula){
+            $this->nome = $matricula;
+        }
+        public function setTelefone($telefone){
+            $this->nome = $telefone;
+        }
 
-            $nome = 'joao';
-            $telefone = '123456789';
-            $celular = '987654321';
-            $email = 'joao@email.com';
+    }
 
-            $pessoa = new Funcionario();
-            $pessoa->setNome($nome);
-            $pessoa->setTelefone($telefone);
-            $pessoa->setCelular($celular);
-            $pessoa->setEmail($email);
-            // enviando os dados para ser inseridos
-            $pessoa->insert($nome,$telefone,$celular,$email);
 ?>
