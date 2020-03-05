@@ -1,7 +1,7 @@
 <?php 
 namespace App\controller;
 use App\view;
-require_once "vendor/autoload.php";
+
     class funcionario{
 
 

@@ -1,6 +1,6 @@
 <?php 
 namespace App\view;
-require_once "vendor/autoload.php";
+
 use App\controller\funcionario as Funcionario;
 
     class index{
@@ -12,7 +12,7 @@ use App\controller\funcionario as Funcionario;
         public function __construct()
         {
             
-            echo "aqui";
+     
         }
 
         public function funcionario ($nome,$matricula,$telefone){
