@@ -1,45 +1,17 @@
-<?php 
-namespace App\view;
+<?php
 
-use App\controller\funcionario as Funcionario;
+   
+    require_once "../DAO/PessoaDao.php";
 
-    class index{
-
-        public $nome;
-        public $matricula;
-        public $telefone;
-
-        public function __construct()
-        {
-            
-     
-        }
-
-        public function funcionario ($nome,$matricula,$telefone){
-
-
-            echo "inserindo os dados de ".$nome."Nome da matricular ".$matricula."seu telefone e ".$telefone;
-        }
-
-        public function getNome(){
-            return $this->nome;
-        }
-        public function getMatricula(){
-            return $this->matricula;
-        }
-        public function getTelefone(){
-            return $this->Telefone;
-        }
-        public function setNome($nome){
-            $this->nome = $nome;
-        }
-        public function setMatricula($matricula){
-            $this->nome = $matricula;
-        }
-        public function setTelefone($telefone){
-            $this->nome = $telefone;
-        }
-
-    }
+  
+    $pessoa = new PessoaDao();
+    $pessoa->setNome("supino");
+    $pessoa->setLogin("fernando2");
+    $pessoa->setSenha("123456");
+    //$pessoa->store ($pessoa);             //para adicionar uma pessoa 
+    //$pessoa->show(1);                     //para seleciona uma unica pessoa 
+    //$pessoa->selectAll();                 //para seleciona todos da tabela
+    //$pessoa->destroy(3);                  //para apagar um registro de uma tabela
+    $pessoa->update($pessoa);
 
 ?>
