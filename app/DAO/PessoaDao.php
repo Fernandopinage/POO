@@ -56,7 +56,6 @@
        }
        /*** ***************fim do metodos****************** */
 
-    
        public function update($pessoa){
 
         echo "<pre>";
